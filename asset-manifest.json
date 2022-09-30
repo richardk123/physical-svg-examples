@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/physical-svg-examples/static/css/main.51f187c0.css",
+    "main.js": "/physical-svg-examples/static/js/main.553fdc8b.js",
+    "index.html": "/physical-svg-examples/index.html",
+    "main.51f187c0.css.map": "/physical-svg-examples/static/css/main.51f187c0.css.map",
+    "main.553fdc8b.js.map": "/physical-svg-examples/static/js/main.553fdc8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51f187c0.css",
+    "static/js/main.553fdc8b.js"
+  ]
+}
