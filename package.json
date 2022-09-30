@@ -1,0 +1,56 @@
+{
+  "name": "physical-svg-examples",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://richardk123.github.io/physical-svg-examples",
+  "dependencies": {
+    "@codemirror/lang-html": "^6.1.2",
+    "@codemirror/lang-javascript": "^6.1.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.62",
+    "@types/react": "^18.0.21",
+    "@types/react-codemirror": "^1.0.7",
+    "@types/react-dom": "^18.0.6",
+    "@uiw/react-codemirror": "^4.12.3",
+    "bootstrap": "^5.2.1",
+    "node-sass": "^7.0.3",
+    "physical-svg": "^0.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.8.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build --mode production",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+img, svg {
+  vertical-align: top;
+  background: 0 0 / contain rgb(20, 21, 31);
+}
+
+.reload-icon
+{
+  padding-right: 5px;
+}
+
+h1
+{
+  padding-top: 70px;
+  border-bottom: 1px solid silver;
+}
+
+.intro
+{
+  padding-bottom: 70px;
+}
