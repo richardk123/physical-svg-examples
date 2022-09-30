@@ -28,8 +28,9 @@ export class Example1 implements Example
             '            .withLimitVelocityPlugin(8)\n' +
             '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
             '            .withBorderCollider()\n' +
+            '            .withMouseInteraction(0.01)\n' +
             '            .withDebugRenderer(document.getElementById("debug-render" + this.id)!)\n' +
-            '            .startSimulation({colliderWidth: 5, restitution: 1, friction: 0, frictionAir: 0});'
+            '            .startSimulation({colliderWidth: 5, restitution: .9, friction: 0, frictionAir: 0});'
     }
 
     get tsCode(): string
@@ -40,8 +41,9 @@ export class Example1 implements Example
             '            .withLimitVelocityPlugin(8)\n' +
             '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
             '            .withBorderCollider()\n' +
+            '            .withMouseInteraction(0.01)\n' +
             '            .withDebugRenderer(document.getElementById("debug-render" + this.id)!)\n' +
-            '            .startSimulation({colliderWidth: 5, restitution: 1, friction: 0, frictionAir: 0});'
+            '            .startSimulation({colliderWidth: 5, restitution: .9, friction: 0, frictionAir: 0});'
     }
 
     get simulationStarter(): () => StopPhysicalSvg
@@ -52,6 +54,7 @@ export class Example1 implements Example
             .withLimitVelocityPlugin(8)
             .withLimitAngularVelocityPlugin(Math.PI / 100)
             .withBorderCollider()
+            .withMouseInteraction(0.01)
             .withDebugRenderer(document.getElementById("debug-render" + this.id)!)
             .startSimulation({colliderWidth: 5, restitution: .9, friction: 0, frictionAir: 0});
     };

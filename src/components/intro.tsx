@@ -6,7 +6,10 @@ export const Intro = () => {
     return (
         <div className="intro container">
             <h1>Physical-svg</h1>
-            <p>Is typescript library for node.js that runs physical <b>simulation</b> on your <b>svg</b> picture in browser.</p>
+            <p>
+                Is typescript library for node.js that runs physical <b>simulation</b> on your <b>svg</b> picture in browser.
+                This project uses awesome 2d physic library <a href="https://brm.io/matter-js/">matterjs</a> and for bezier curves <a href="https://pomax.github.io/bezierjs/">bezier-js</a>.
+            </p>
 
             <h1>Installation</h1>
             <p>
@@ -18,8 +21,7 @@ export const Intro = () => {
                 />
             </p>
             <p>
-                or use javascript bundle directly
-                <a href="https://raw.githubusercontent.com/richardk123/physical-svg/main/dist/bundle.js"> physical-svg.js</a>
+                or use javascript bundle directly <a href="https://raw.githubusercontent.com/richardk123/physical-svg/main/dist/bundle.js">physical-svg.js</a>
             </p>
 
             <h1>Links</h1>

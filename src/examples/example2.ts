@@ -39,11 +39,11 @@ export class Example2 implements Example
             '            .withGravity({x: 0, y: 0})\n' +
             '            .withMouseInteraction(0.01)\n' +
             '            .withScrollInteraction(0.001)\n' +
-            '            .withLimitVelocityPlugin(4)\n' +
+            '            .withLimitVelocityPlugin(2)\n' +
             '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
             '            .withBorderCollider()\n' +
             '            .withDebugRenderer(document.getElementById("example1-canvas-wrapper")!)\n' +
-            '            .startSimulation({colliderWidth: 5, restitution: 1, friction: 0, frictionAir: 0});'
+            '            .startSimulation({colliderWidth: 10, restitution: 1, friction: 0, frictionAir: 0});'
     }
 
     get simulationStarter(): () => StopPhysicalSvg
@@ -53,11 +53,11 @@ export class Example2 implements Example
             .withGravity({x: 0, y: 0})
             .withMouseInteraction(0.01)
             .withScrollInteraction(0.001)
-            .withLimitVelocityPlugin(4)
+            .withLimitVelocityPlugin(2)
             .withLimitAngularVelocityPlugin(Math.PI / 100)
             .withBorderCollider()
             .withDebugRenderer(document.getElementById("debug-render" + this.id)!)
-            .startSimulation({colliderWidth: 5, restitution: 1, friction: 0, frictionAir: 0});
+            .startSimulation({colliderWidth: 10, restitution: 1, friction: 0, frictionAir: 0});
     };
 
     get tsCode(): string
@@ -67,11 +67,11 @@ export class Example2 implements Example
             '            .withGravity({x: 0, y: 0})\n' +
             '            .withMouseInteraction(0.01)\n' +
             '            .withScrollInteraction(0.001)\n' +
-            '            .withLimitVelocityPlugin(4)\n' +
+            '            .withLimitVelocityPlugin(2)\n' +
             '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
             '            .withBorderCollider()\n' +
             '            .withDebugRenderer(document.getElementById("example1-canvas-wrapper")!)\n' +
-            '            .startSimulation({colliderWidth: 5, restitution: 1, friction: 0, frictionAir: 0});'
+            '            .startSimulation({colliderWidth: 10, restitution: 1, friction: 0, frictionAir: 0});'
     }
 
 }

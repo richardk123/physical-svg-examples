@@ -24,36 +24,36 @@ export class Example1Aggregator implements Example
     {
         return 'PhysicalSvg(document.getElementById(this.id)!)\n' +
             '            .useCollisionAggregator()\n' +
-            '            .withGravity({x: 0, y: 25)\n' +
-            '            .withLimitVelocityPlugin(8)\n' +
+            '            .withGravity({x: 0, y: .3})\n' +
             '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
+            '            .withMouseInteraction(0.01)\n' +
             '            .withBorderCollider()\n' +
             '            .withDebugRenderer(document.getElementById("debug-render" + this.id)!)\n' +
-            '            .startSimulation({colliderWidth: 5, restitution: 1.06, friction: 0, frictionAir: 0});'
+            '            .startSimulation({colliderWidth: 6, restitution: 0, friction: 0, frictionAir: 0});'
     }
 
     get tsCode(): string
     {
         return 'PhysicalSvg(document.getElementById(this.id)!)\n' +
             '            .useCollisionAggregator()\n' +
-            '            .withGravity({x: 0, y: 25)\n' +
-            '            .withLimitVelocityPlugin(8)\n' +
+            '            .withGravity({x: 0, y: .3})\n' +
             '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
+            '            .withMouseInteraction(0.01)\n' +
             '            .withBorderCollider()\n' +
             '            .withDebugRenderer(document.getElementById("debug-render" + this.id)!)\n' +
-            '            .startSimulation({colliderWidth: 5, restitution: 1.06, friction: 0, frictionAir: 0});'
+            '            .startSimulation({colliderWidth: 6, restitution: 0, friction: 0, frictionAir: 0})'
     }
 
     get simulationStarter(): () => StopPhysicalSvg
     {
         return () => PhysicalSvg(document.getElementById(this.id)!)
             .useCollisionAggregator()
-            .withGravity({x: 0, y: 1})
-            .withLimitVelocityPlugin(25)
+            .withGravity({x: 0, y: .3})
             .withLimitAngularVelocityPlugin(Math.PI / 100)
+            .withMouseInteraction(0.01)
             .withBorderCollider()
             .withDebugRenderer(document.getElementById("debug-render" + this.id)!)
-            .startSimulation({colliderWidth: 5, restitution: 1.06, friction: 0, frictionAir: 0});
+            .startSimulation({colliderWidth: 6, restitution: 0, friction: 0, frictionAir: 0});
     };
 
 }
