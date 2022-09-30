@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/physical-svg-examples/static/css/main.51f187c0.css",
-    "main.js": "/physical-svg-examples/static/js/main.e3a109b0.js",
+    "main.js": "/physical-svg-examples/static/js/main.418d0ad8.js",
     "index.html": "/physical-svg-examples/index.html",
     "main.51f187c0.css.map": "/physical-svg-examples/static/css/main.51f187c0.css.map",
-    "main.e3a109b0.js.map": "/physical-svg-examples/static/js/main.e3a109b0.js.map"
+    "main.418d0ad8.js.map": "/physical-svg-examples/static/js/main.418d0ad8.js.map"
   },
   "entrypoints": [
     "static/css/main.51f187c0.css",
-    "static/js/main.e3a109b0.js"
+    "static/js/main.418d0ad8.js"
   ]
 }
