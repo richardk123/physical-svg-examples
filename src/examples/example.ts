@@ -4,8 +4,6 @@ export interface Example
 {
     get id(): string;
 
-    get jsCode(): string;
-
     get tsCode(): string;
 
     get htmlCode(): string;

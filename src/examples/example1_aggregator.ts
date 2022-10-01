@@ -20,18 +20,6 @@ export class Example1Aggregator implements Example
         return "example1_collision_aggregator";
     }
 
-    get jsCode(): string
-    {
-        return 'PhysicalSvg(document.getElementById(this.id)!)\n' +
-            '            .useCollisionAggregator()\n' +
-            '            .withGravity({x: 0, y: .3})\n' +
-            '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
-            '            .withMouseInteraction(0.01)\n' +
-            '            .withBorderCollider()\n' +
-            '            .withDebugRenderer(document.getElementById("debug-render" + this.id)!)\n' +
-            '            .startSimulation({colliderWidth: 6, restitution: 0, friction: 0, frictionAir: 0});'
-    }
-
     get tsCode(): string
     {
         return 'PhysicalSvg(document.getElementById(this.id)!)\n' +

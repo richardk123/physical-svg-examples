@@ -84,7 +84,7 @@ export class Showcase extends React.Component<ShowCaseProps> {
                     </div>
                     <div className="card-body">
                         <h5 className="card-title">Source code</h5>
-                        <SourceViewer codeJs={this.props.data.jsCode} codeTs={this.props.data.tsCode} codeHtml={this.props.data.htmlCode}/>
+                        <SourceViewer codeTs={this.props.data.tsCode} codeHtml={this.props.data.htmlCode}/>
                     </div>
                 </div>
             </div>

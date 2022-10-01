@@ -20,19 +20,6 @@ export class Example1 implements Example
         return "example1";
     }
 
-    get jsCode(): string
-    {
-        return 'PhysicalSvg(document.getElementById(this.id)!)\n' +
-            '            .usePathAggregator()\n' +
-            '            .withGravity({x: 0, y: 1})\n' +
-            '            .withLimitVelocityPlugin(8)\n' +
-            '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
-            '            .withBorderCollider()\n' +
-            '            .withMouseInteraction(0.01)\n' +
-            '            .withDebugRenderer(document.getElementById("debug-render" + this.id)!)\n' +
-            '            .startSimulation({colliderWidth: 5, restitution: .9, friction: 0, frictionAir: 0});'
-    }
-
     get tsCode(): string
     {
         return 'PhysicalSvg(document.getElementById(this.id)!)\n' +

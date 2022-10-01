@@ -32,20 +32,6 @@ export class Example2 implements Example
         return "example2";
     }
 
-    get jsCode(): string
-    {
-        return 'PhysicalSvg(document.getElementById("svg")!)\n' +
-            '            .usePathAggregator()\n' +
-            '            .withGravity({x: 0, y: 0})\n' +
-            '            .withMouseInteraction(0.01)\n' +
-            '            .withScrollInteraction(0.001)\n' +
-            '            .withLimitVelocityPlugin(2)\n' +
-            '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
-            '            .withBorderCollider()\n' +
-            '            .withDebugRenderer(document.getElementById("example1-canvas-wrapper")!)\n' +
-            '            .startSimulation({colliderWidth: 10, restitution: 1, friction: 0, frictionAir: 0});'
-    }
-
     get simulationStarter(): () => StopPhysicalSvg
     {
         return () => PhysicalSvg(document.getElementById(this.id)!)

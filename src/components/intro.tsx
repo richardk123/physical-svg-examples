@@ -5,9 +5,9 @@ import { javascript } from '@codemirror/lang-javascript';
 export const Intro = () => {
     return (
         <div className="intro container">
-            <h1>Physical-svg</h1>
+            <h1>physical-svg</h1>
             <p>
-                Is typescript library for node.js that runs physical <b>simulation</b> on your <b>svg</b> picture in browser.
+                Is typescript library for node.js that runs <b>physical</b> simulation on your <b>svg</b> picture in browser.
                 This project uses awesome 2d physic library <a href="https://brm.io/matter-js/">matterjs</a> and for bezier curves <a href="https://pomax.github.io/bezierjs/">bezier-js</a>.
             </p>
 

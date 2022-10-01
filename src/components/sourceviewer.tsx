@@ -5,14 +5,13 @@ import { html } from '@codemirror/lang-html';
 
 export interface SourceViewerProps
 {
-    codeJs: string;
     codeTs: string;
     codeHtml: string;
 }
 
 export interface SourceViewerState
 {
-    language: "js" | "ts" | "html";
+    language: "ts" | "html";
 }
 
 export class SourceViewer extends React.Component<SourceViewerProps, SourceViewerState> {
@@ -21,7 +20,6 @@ export class SourceViewer extends React.Component<SourceViewerProps, SourceViewe
     {
         super(props);
         this.state = {language: "ts"};
-        this.handleClickJS = this.handleClickJS.bind(this);
         this.handleClickTS = this.handleClickTS.bind(this);
         this.handleClickHtml = this.handleClickHtml.bind(this);
     }
@@ -31,17 +29,6 @@ export class SourceViewer extends React.Component<SourceViewerProps, SourceViewe
         let codeMirror;
         switch (this.state.language)
         {
-            case "js":
-            {
-                codeMirror =
-                    <CodeMirror
-                        value={this.props.codeJs}
-                        editable={false}
-                        height="200px"
-                        extensions={[javascript({ jsx: true })]}
-                    />;
-                break;
-            }
             case "ts":
             {
                 codeMirror =
@@ -73,9 +60,6 @@ export class SourceViewer extends React.Component<SourceViewerProps, SourceViewe
                         <a className={`nav-link ${this.state.language === "ts" ? "active" : ""}`} aria-current="page" onClick={this.handleClickTS}>Typescript</a>
                     </li>
                     <li className="nav-item">
-                        <a className={`nav-link ${this.state.language === "js" ? "active" : ""}`} aria-current="page" onClick={this.handleClickJS}>Javascript</a>
-                    </li>
-                    <li className="nav-item">
                         <a className={`nav-link ${this.state.language === "html" ? "active" : ""}`} aria-current="page" onClick={this.handleClickHtml}>HTML</a>
                     </li>
                 </ul>
@@ -88,10 +72,7 @@ export class SourceViewer extends React.Component<SourceViewerProps, SourceViewe
     {
         this.setState({language: "ts"});
     }
-    handleClickJS()
-    {
-        this.setState({language: "js"});
-    }
+
     handleClickHtml()
     {
         this.setState({language: "html"});

@@ -18,24 +18,10 @@ export class Example3 implements Example
         return "example3";
     }
 
-    get jsCode(): string
-    {
-        return 'PhysicalSvg(document.getElementById("svg")!)\n' +
-            '            .usePathAggregator()\n' +
-            '            .withGravity({x: 0, y: 0})\n' +
-            '            .withMouseInteraction(0.01)\n' +
-            '            .withScrollInteraction(0.001)\n' +
-            '            .withLimitVelocityPlugin(4)\n' +
-            '            .withLimitAngularVelocityPlugin(Math.PI / 100)\n' +
-            '            .withBorderCollider()\n' +
-            '            .withDebugRenderer(document.getElementById("example1-canvas-wrapper")!)\n' +
-            '            .startSimulation({colliderWidth: 5, restitution: 1, friction: 0, frictionAir: 0});'
-    }
-
     get simulationStarter(): () => StopPhysicalSvg
     {
         return () => PhysicalSvg(document.getElementById(this.id)!)
-            .usePathAggregator()
+            .useCollisionAggregator()
             .withGravity({x: 0, y: 0})
             .withMouseInteraction(0.01)
             .withScrollInteraction(0.001)
@@ -49,7 +35,7 @@ export class Example3 implements Example
     get tsCode(): string
     {
         return 'PhysicalSvg(document.getElementById("svg")!)\n' +
-            '            .usePathAggregator()\n' +
+            '            .useCollisionAggregator()\n' +
             '            .withGravity({x: 0, y: 0})\n' +
             '            .withMouseInteraction(0.01)\n' +
             '            .withScrollInteraction(0.001)\n' +
